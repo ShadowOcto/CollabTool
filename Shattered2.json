@@ -1,0 +1,73 @@
+{
+  "name": "Shattered",
+  "difficulty": "ExtremeDemon",
+  "invite": "eAvP23z2",
+  "song": "Fragile",
+  "nong": true,
+  "version": 2.1,
+  "parts": [
+    {
+      "length": 12,
+      "color": "#1da9ff",
+      "gameplay": "Shadow",
+      "gameplayComplete": true,
+      "decoration": "Shadow",
+      "decorationComplete": true,
+      "comment": ""
+    },
+    {
+      "length": 9,
+      "color": "#26ffe3",
+      "gameplay": "Shadow",
+      "gameplayComplete": true,
+      "decoration": "Shadow",
+      "decorationComplete": true,
+      "comment": ""
+    },
+    {
+      "length": 10,
+      "color": "#9e51ff",
+      "gameplay": "Shadow",
+      "gameplayComplete": true,
+      "decoration": "Shadow",
+      "decorationComplete": true,
+      "comment": ""
+    },
+    {
+      "length": 5,
+      "color": "#eb79ff",
+      "gameplay": "Shadow",
+      "gameplayComplete": true,
+      "decoration": "Hykre",
+      "decorationComplete": true,
+      "comment": "part version 2!"
+    },
+    {
+      "length": 2,
+      "color": "#a95aff",
+      "gameplay": "Shadow",
+      "gameplayComplete": true,
+      "decoration": "Minaxa",
+      "decorationComplete": false,
+      "comment": "it's been months!"
+    },
+    {
+      "length": 7,
+      "color": "#5aa4ff",
+      "gameplay": "Shadow",
+      "gameplayComplete": true,
+      "decoration": "youngs",
+      "decorationComplete": false,
+      "comment": ""
+    },
+    {
+      "length": 1,
+      "color": "#5adcff",
+      "gameplay": "Shadow",
+      "gameplayComplete": true,
+      "decoration": "Shadow",
+      "decorationComplete": false,
+      "comment": ""
+    }
+  ]
+}
