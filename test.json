@@ -1,0 +1,22 @@
+{
+  "name": "collab real",
+  "song": "",
+  "nong": false,
+  "version": 2.1,
+  "parts": [
+    {
+      "name": "part1",
+      "length": "20",
+      "color": "#FFFFFF",
+      "gameplay": "me1",
+      "decoration": "me2"
+    },
+    {
+      "name": "part2",
+      "length": "25",
+      "color": "#0000FF",
+      "gameplay": "me3",
+      "decoration": "me4"
+    }
+  ]
+}
