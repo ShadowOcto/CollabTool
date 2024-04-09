@@ -1,0 +1,50 @@
+{
+  "name": "Shattered",
+  "song": "Fragile",
+  "nong": true,
+  "version": 2.1,
+  "parts": [
+    {
+      "length": "12",
+      "color": "#1da9ff",
+      "gameplay": "Shadow",
+      "decoration": "Shadow"
+    },
+    {
+      "length": "9",
+      "color": "#26ffe3",
+      "gameplay": "Shadow",
+      "decoration": "Shadow"
+    },
+    {
+      "length": "10",
+      "color": "#26ffe3",
+      "gameplay": "Shadow",
+      "decoration": "Shadow"
+    },
+    {
+      "length": "5",
+      "color": "#eb79ff",
+      "gameplay": "Shadow",
+      "decoration": "Hykre"
+    },
+    {
+      "length": "2",
+      "color": "#c447ff",
+      "gameplay": "Shadow",
+      "decoration": "Minaxa"
+    },
+    {
+      "length": "7",
+      "color": "#5aa4ff",
+      "gameplay": "Shadow",
+      "decoration": "youngs"
+    },
+    {
+      "length": "1",
+      "color": "#5adcff",
+      "gameplay": "Shadow",
+      "decoration": "Shadow"
+    }
+  ]
+}
