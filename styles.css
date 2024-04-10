@@ -1,0 +1,272 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.page-title {
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs .tablink {
+    color: #d1d1d1;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.tabs .tablink:hover {
+    background-color: #0f0f0f;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    min-width: 400px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+}
+
+.button-container {
+    display: flex;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button.active {
+    background-color: #3498db;
+}
+
+button:disabled {
+    background-color: #242424; /* Darken the disabled button */
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0s;
+}
+
+.bar-container {
+    position: relative;
+    height: 45px;
+    width: 800px; /* Adjust the width as needed */
+    background-color: #222;
+    border-radius: 8px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative; /* Add this */
+}
+
+.bar-segment {
+    transition: background-color 0.3s;
+}
+
+.bar-segment:hover {
+    filter: brightness(70%);
+}
+
+.bar-segment.selected {
+    filter: brightness(100%);
+}
+
+.level-difficulty {
+    position: absolute;
+    top: 230px;
+    left: calc(50% - 400px);
+    background-color: #131313;
+    min-height: 72px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #0000005b;
+    z-index: 999;
+    max-width: calc(50% - 20px); 
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear; /* Include opacity transition */
+}
+
+.level-info-display {
+    position: absolute;
+    top: 230px;
+    left: calc(50% - 320px);
+    background-color: #131313;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #0000005b;
+    z-index: 999;
+    max-width: calc(50% - 20px); 
+    visibility: hidden;
+    opacity: 0;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear; /* Include opacity transition */
+}
+
+.image-box {
+    margin-right: 10px;
+}
+
+.info-display {
+    position: absolute;
+    top: 230px;
+    left: calc(50% + 400px); /* Align with the left side of the bar */
+    transform: translateX(-100%);
+    border-width: 2px;
+    border-style: solid; /* Add border style */
+    background-color: #131313;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #0000005b;
+    z-index: 999;
+    max-width: calc(50% - 20px); /* Adjust the max-width as needed */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear; /* Include opacity transition */
+}
+
+.info-display.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.level-info-display.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.level-difficulty.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bar-segment {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 0;
+}
+
+.beta-text {
+    color: grey;
+    margin-left: 5px; /* Add some spacing between "CollabTool" and "BETA" */
+}
+
+.bar-info-left {
+    position: absolute;
+    top: 198px;
+    left: calc(50% - 400px); /* Aligned to the left of the bar */
+    color: #8a8a8a; /* Grey color */
+}
+
+.bar-info-right {
+    position: absolute;
+    top: 198px;
+    right: calc(50% - 400px);
+    color: #8a8a8a;
+}
+
+.line {
+    position: absolute;
+    border: none;
+    border-top: 2px dashed;
+    border-color: #8a8a8a;
+    width: 550px;
+    top: 198px;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.line.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.join-button {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5865F2;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    left: calc(50% - 400px);
+    top: 340px;
+}
+
+.level-info-display a {
+    text-decoration: none;
+    color: #3498db;
+}
