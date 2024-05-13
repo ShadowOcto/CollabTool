@@ -1,7 +1,6 @@
-from utils import *
 import json
 
-console.log("Started")
+print("Started")
 
 parts = []
 
