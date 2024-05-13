@@ -123,7 +123,7 @@ function displayDifficulty(jsonData) {
     levelDifficulty.innerHTML = '';
 
     var img = document.createElement("img");
-    img.src = "/faces/" + jsonData.difficulty + ".png";
+    img.src = "https://shadowocto.github.io/CollabTool/faces/" + jsonData.difficulty + ".png";
     img.alt = "Difficulty";
     img.style.width = "50px";
     levelDifficulty.appendChild(img);
