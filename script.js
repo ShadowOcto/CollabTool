@@ -1,3 +1,5 @@
+// Made through hours and hours of ChatGPT prompting, probably not the best idea.
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
